@@ -3,8 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Do not use sqlite3 as the database for Active Record. 
+# Heroku needs pg (see:https://devcenter.heroku.com/articles/getting-started-with-rails5#local-workstation-setup and run bundle install again to create new gemfile)
+# additionally do this: https://devcenter.heroku.com/articles/sqlite3 and migrate the database again with 'rake db:create' 'rake db:migrate' in cmd.exe
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
