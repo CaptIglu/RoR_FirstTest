@@ -22,4 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-Change...for test
+Change...for test AND antother change for new git version
